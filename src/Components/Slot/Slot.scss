@@ -1,0 +1,201 @@
+.graph-card {
+  box-sizing: border-box;
+  height: calc(50% - 1.5rem);
+  min-width: calc(50% - 10px) !important;
+  margin-right: 5px;
+  padding: 0 !important;
+  transition: 0.3s box-shadow ease-in;
+  border: 2px solid rgb(168, 168, 168);
+  background: rgba(78, 78, 78, 0.212);
+  color: white;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  svg {
+    .main-graph {
+      rect:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &--empty {
+    max-width: calc(50% - 5px) !important;
+    &__add-graph-button {
+      border-radius: 50% !important;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        width: 3rem;
+      }
+    }
+  }
+
+  &__header {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .dropdown {
+      flex: 1;
+    }
+
+    &__button {
+      color: #6c6c6c;
+      font-weight: bolder;
+      opacity: 0.75;
+      width: 1em;
+      height: 1em;
+      box-sizing: content-box;
+      padding: 0.25em 0.25em !important;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &--order {
+        i {
+          color: white;
+        }
+      }
+
+      &--pageNav {
+        i {
+          color: $primary;
+        }
+      }
+
+      &--fullscreen {
+        margin-right: 1.5px;
+        &:hover {
+          i {
+            color: $primary;
+          }
+        }
+      }
+
+      &--close {
+        margin-left: 1.5px;
+        &:hover {
+          i {
+            color: red;
+          }
+        }
+      }
+    }
+    ul li {
+      cursor: pointer;
+    }
+  }
+
+  &__badge {
+    flex: 1;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    flex: 2;
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  &__modal {
+    height: calc(100% - 3.5rem) !important;
+
+    .modal-content {
+      height: 100%;
+    }
+  }
+}
+
+.select-cntry {
+  color: #9c9c9c;
+}
+
+.btn {
+  color: rgb(17, 163, 231);
+  border: 1px solid rgb(211, 136, 15);
+}
+
+.btn:hover {
+  border: solid 1px rgb(17, 163, 231);
+}
+
+.card-select-country {
+  box-sizing: border-box;
+  height: calc(50% - 1.5rem);
+  min-width: calc(50% - 10px) !important;
+  margin-right: 5px;
+  padding: 0 !important;
+  transition: 0.3s box-shadow ease-in;
+  background-color: rgb(59, 59, 59);
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  .list-group {
+    height: 100%;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+
+      &-track {
+        background: transparent;
+      }
+
+      &-thumb {
+        background: #5902ab;
+        border-radius: 5px;
+        border: 0.8px solid white;
+        &:hover {
+          background: #555;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    height: calc(100% - 30px);
+  }
+
+  .card-body--with-button {
+    height: calc(100% - 70px);
+  }
+
+  .button-back {
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .graph-card {
+    min-width: calc(100% - 10px) !important;
+
+    &-empty {
+      min-width: calc(100% - 10px) !important;
+    }
+  }
+
+  .card-select-country {
+    min-width: calc(100% - 10px) !important;
+  }
+}

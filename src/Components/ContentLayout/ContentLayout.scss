@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.content-layout {
+  max-height: 100%;
+
+  &--no-graph {
+    margin: 15px 0;
+    margin-top: 15px !important;
+  }
+
+  &__card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+
+
+.add-graph-button {
+  border-radius: 50% !important;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    width: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .content-layout {
+    height: 90%;
+    overflow-y: scroll;
+  }
+}
+
+.heading {
+  color: darkturquoise;
+}
+
+.tagline {
+  color: rgb(232, 17, 236);
+  padding-top: 2%;
+  margin-top: 2.5%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+}
+
+.info-para {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  line-height: 160%;
+  width: 75%;
+  height: auto;
+  margin: 3%;
+  padding: 1% 4% 1% 4%;
+  border: 2px solid rgb(117, 117, 117);
+  border-radius: 3rem 0 3rem 0;
+  justify-content: center;
+  align-content: center;
+  color: gainsboro;
+}
+
+.info-para a {
+  text-decoration: none;
+  color: darkturquoise;
+}
+
+.info-para a:hover {
+  text-decoration: underline;
+  color: hotpink;
+}
+
+.btn {
+  border-color: hotpink;
+}
+
+.btn-text {
+  color: grey;
+}
+
+.learn-more{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 1% auto 1% 24%;
+  padding-bottom: 6%;
+}
+.topics {
+  color: darkseagreen;
+  margin-top: 2%;
+  // margin-left: 6%;
+}
+
+.topic-links{
+  display: flex;
+  width: 100%;
+}
+
+.topics-list{
+  list-style: none;
+  display: inherit;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.topics-list li {
+  padding: 3%;
+  justify-content: center;
+}
+
+.topics-list a{
+  color: rgb(203, 175, 15);
+  text-decoration: none;
+}
+
+.topics-list a:hover{
+  color: gold;
+}
